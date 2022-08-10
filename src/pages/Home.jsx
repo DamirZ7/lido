@@ -22,11 +22,6 @@ const Home = () => {
   const { searchValue } = useContext(SearchContext)
   const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
-  // const [categoryId, setCategoryId] = useState(0)
-  // const [sortType, setSortType] = useState({
-  //   name: 'популярности',
-  //   sortProperty: 'rating',
-  // })
 
   const onChangeCategory = (id) => {
     dispatch(setCategoryId(id))
