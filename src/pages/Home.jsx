@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useContext, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import qs from 'qs'
 import { useSelector, useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import Categories from '../components/Categories'
 import Sort, { sortArr } from '../components/Sort'
 import PizzaBlock from '../components/PizzaBlock'
 import Skeleton from '../components/PizzaBlock/Skeleton'
-import { SearchContext } from '../App'
-import { setCategoryId, setFilters } from '../redux/slices/filterSlice'
-import { fetchPizzas } from '../redux/slices/pizzaSlice'
+
+import { selectFilter, setCategoryId, setFilters } from '../redux/slices/filterSlice'
+import { fetchPizzas, selectPizzaData } from '../redux/slices/pizzaSlice'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -17,12 +17,8 @@ const Home = () => {
   const isSearch = useRef(false)
   const isMounted = useRef(false)
 
-  const { categoryId, sort } = useSelector((state) => state.filter)
-  const { items, status } = useSelector((state) => state.pizza)
-
-  const { searchValue } = useContext(SearchContext)
-
-  // const [isLoading, setIsLoading] = useState(true)
+  const { categoryId, sort, searchValue } = useSelector(selectFilter)
+  const { items, status } = useSelector(selectPizzaData)
 
   const onChangeCategory = (id) => {
     dispatch(setCategoryId(id))
@@ -89,7 +85,11 @@ const Home = () => {
   }, [categoryId, sort.sortProperty, searchValue])
 
   const skeleton = [...new Array(6)].map((_, index) => <Skeleton key={index} />)
-  const pizzas = items.map((item, i) => <PizzaBlock key={item.id} {...item} />)
+  const pizzas = items.map((item, i) => (
+    <Link key={item.id} to={`/pizza/${item.id}`}>
+      <PizzaBlock {...item} />
+    </Link>
+  ))
 
   return (
     <div className='container'>
