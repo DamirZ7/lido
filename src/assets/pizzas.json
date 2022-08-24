@@ -1,7 +1,7 @@
 [
   {
    "id": "0",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509738/LIDO/%D1%81%D1%8B%D1%80%D0%BD%D0%B0%D1%8F_zc7ql7.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660822/LIDO%20COMPRESSED/%D1%81%D1%8B%D1%80%D0%BD%D0%B0%D1%8F_nh0yub.jpg",
    "title": "Сырная",
    "types": [
     0,
@@ -14,11 +14,12 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, сыр «Адыгейский», сыр «Пармезан», сыр «Моцарелла»"
   },
   {
    "id": "1",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509737/LIDO/%D1%86%D0%B5%D0%B7%D0%B0%D1%80%D1%8C_fz2dzu.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660822/LIDO%20COMPRESSED/%D1%86%D0%B5%D0%B7%D0%B0%D1%80%D1%8C_rwkmbr.jpg",
    "title": "Цезарь",
    "types": [
     0
@@ -29,11 +30,12 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, куриное филе, айсберг, черри, соус «Цезарь», сыр «Моцарелла», сыр «Пармезан»"
   },
   {
    "id": "2",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509737/LIDO/%D1%81_%D1%81%D0%B5%D0%BC%D0%B3%D0%BE%D0%B8%CC%86_vrbb5w.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660821/LIDO%20COMPRESSED/%D1%81_%D1%81%D0%B5%D0%BC%D0%B3%D0%BE%D0%B8%CC%86_ihauuz.jpg",
    "title": "С сёмгой",
    "types": [
     0
@@ -44,11 +46,12 @@
    ],
    "price": 2390,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, сёмга, маслины, кунжут чёрный, соус «Терияки», сыр «Моцарелла»"
   },
   {
    "id": "3",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509736/LIDO/%D1%81%D0%B8%D1%86%D0%B8%D0%BB%D0%B8%D1%8F_sswnlc.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660821/LIDO%20COMPRESSED/%D1%81%D0%B8%D1%86%D0%B8%D0%BB%D0%B8%D1%8F_t2q8k5.jpg",
    "title": "Сицилия",
    "types": [
     1
@@ -60,11 +63,12 @@
    ],
    "price": 2290,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, фарш говяжий халал, помидоры, сыр «Моцарелла»"
   },
   {
    "id": "4",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509736/LIDO/%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D1%87%D1%8C%D1%8F_vs2znu.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660820/LIDO%20COMPRESSED/%D0%BE%D1%85%D0%BE%D1%82%D0%BD%D0%B8%D1%87%D1%8C%D1%8F_x6ndi7.jpg",
    "title": "Охотничья",
    "types": [
     0,
@@ -77,11 +81,12 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, колбаски «Охотничьи» халал, красный лук, сыр «Моцарелла», орегано"
   },
   {
    "id": "5",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509736/LIDO/%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0_pg9s98.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660819/LIDO%20COMPRESSED/%D0%BC%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0_ptxbpq.jpg",
    "title": "Маргарита",
    "types": [
     0
@@ -92,11 +97,12 @@
    ],
    "price": 1690,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, помидоры, сыр «Моцарелла», орегано"
   },
   {
    "id": "6",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509736/LIDO/%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D0%B0%D1%8F_%D1%81_%D0%B3%D1%80%D0%B8%D0%B1%D0%B0%D0%BC%D0%B8_qqcdus.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660819/LIDO%20COMPRESSED/%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D0%B0%D1%8F_%D1%81_%D0%B3%D1%80%D0%B8%D0%B1%D0%B0%D0%BC%D0%B8_gyjyi2.jpg",
    "title": "Куриная с грибами",
    "types": [
     0,
@@ -109,11 +115,12 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, куриное филе, шампиньоны, сыр «Моцарелла», орегано"
   },
   {
    "id": "7",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509734/LIDO/%D0%BA%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_lrinre.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660820/LIDO%20COMPRESSED/%D0%BA%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_ioes8l.jpg",
    "title": "Колбасная",
    "types": [
     0,
@@ -126,11 +133,12 @@
    ],
    "price": 1990,
    "category": 1,
-   "rating": 10
+   "rating": 10,
+   "description": "фирменный соус, колбаса говяжья халал, сыр «Моцарелла», орегано"
   },
   {
    "id": "8",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509736/LIDO/%D0%9F%D0%B8%D1%86%D1%86%D0%B0_%D1%81%D0%B5%D1%82_1_sjzom1.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660820/LIDO%20COMPRESSED/%D0%9F%D0%B8%D1%86%D1%86%D0%B0_%D1%81%D0%B5%D1%82_1_qlf6ge.jpg",
    "title": "Сет №1 + Coca-cola 1l.",
    "types": [
     0,
@@ -142,12 +150,13 @@
     40
    ],
    "price": 3990,
-   "category": 1,
-   "rating": 10
+   "category": 2,
+   "rating": 10,
+   "description": "Болоньезе, Маргарита"
   },
   {
    "id": "9",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509736/LIDO/%D0%9F%D0%B8%D1%86%D1%86%D0%B0_%D1%81%D0%B5%D1%82_2_dwe2jy.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660820/LIDO%20COMPRESSED/%D0%9F%D0%B8%D1%86%D1%86%D0%B0_%D1%81%D0%B5%D1%82_2_gmrymo.jpg",
    "title": "Сет №2",
    "types": [
     0,
@@ -159,12 +168,13 @@
     40
    ],
    "price": 5190,
-   "category": 1,
-   "rating": 10
+   "category": 2,
+   "rating": 10,
+   "description": "Охотничья, Цезарь, Маргарита"
   },
   {
    "id": "10",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509738/LIDO/%D0%9F%D0%B8%D1%86%D1%86%D0%B0_%D1%81%D0%B5%D1%82_3_vobehk.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660821/LIDO%20COMPRESSED/%D0%9F%D0%B8%D1%86%D1%86%D0%B0_%D1%81%D0%B5%D1%82_3_gzwpnv.jpg",
    "title": "Сет №3",
    "types": [
     0,
@@ -176,132 +186,14 @@
     40
    ],
    "price": 5890,
-   "category": 1,
-   "rating": 10
+   "category": 2,
+   "rating": 10,
+   "description": "Болоньезе, Куриная с грибами, Колбасная"
   },
   {
    "id": "11",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509735/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D1%88%D0%B5%D1%84%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_i9wbul.png",
-   "title": "Комбо Шеф Бургер",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 2390,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "12",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509735/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D1%87%D0%B8%D0%BA%D0%B5%D0%BD_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_ywitzm.png",
-   "title": "Комбо Чикен",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 1990,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "13",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509735/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_ceqgho.png",
-   "title": "Комбо Чизбургер",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 2190,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "14",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509735/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D0%BB%D0%B8%D0%B4%D0%BE_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_llqgsu.png",
-   "title": "Комбо LIDO",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 2590,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "15",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509735/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_fxm9ww.png",
-   "title": "Комбо Гамбургер",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 2090,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "16",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509735/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_2%D1%85_%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_offlcn.png",
-   "title": "Комбо 2х Чизбургер",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 2990,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "17",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509734/LIDO/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_2%D1%85_%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_ywv73s.png",
-   "title": "Комбо 2х Гамбургер",
-   "types": [
-    0,
-    1
-   ],
-   "sizes": [
-    26,
-    30,
-    40
-   ],
-   "price": 2890,
-   "category": 2,
-   "rating": 9
-  },
-  {
-   "id": "18",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509734/LIDO/%D0%B4%D0%BE%D0%BD%D0%B5%D1%80_%D0%BD%D0%B0_%D0%BC%D0%B0%D0%BD%D0%B3%D0%B0%D0%BB%D0%B5_yl3rfd.png",
-   "title": "Донер на мангале с курицей",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885773/LIDO%20COMPRESSED/%D1%87%D0%B8%D0%BA%D0%B5%D0%BD_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_r4vbgq.jpg",
+   "title": "Чикен Бургер",
    "types": [
     0,
     1
@@ -313,12 +205,13 @@
    ],
    "price": 1190,
    "category": 3,
-   "rating": 8
+   "rating": 10,
+   "description": "фирменная булочка, котлета куриная, лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
-   "id": "19",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509733/LIDO/%D0%B4%D0%BE%D0%BD%D0%B5%D1%80_%D0%B2_%D0%B1%D0%B0%D1%82%D0%BE%D0%BD%D0%B5_r4l6mi.png",
-   "title": "Донер в батоне с курицей",
+   "id": "12",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885772/LIDO%20COMPRESSED/%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_cndlkh.jpg",
+   "title": "Гамбургер",
    "types": [
     0,
     1
@@ -330,11 +223,336 @@
    ],
    "price": 1290,
    "category": 3,
-   "rating": 8
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "13",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885773/LIDO%20COMPRESSED/%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_zhjnz1.jpg",
+   "title": "Чизбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1390,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "14",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885772/LIDO%20COMPRESSED/2%D1%85_%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_noayz5.jpg",
+   "title": "2х Гамбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2190,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья – 2 шт., лист салата, помидор свежий, корнишоны, красный лук, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "15",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885772/LIDO%20COMPRESSED/2%D1%85_%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_cbdqsu.jpg",
+   "title": "2х Чизбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2290,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья – 2 шт., лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "16",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885772/LIDO%20COMPRESSED/IMG_9585_h2dkjy.jpg",
+   "title": "Грибной куриный",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1290,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета куриная, лист салата, помидор свежий, корнишоны, красный лук, жареные шампиньоны, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "17",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885772/LIDO%20COMPRESSED/IMG_9584_zdv34x.jpg",
+   "title": "Грибной говяжий",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1390,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, жареные шампиньоны, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "18",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885773/LIDO%20COMPRESSED/%D0%BB%D0%B8%D0%B4%D0%BE_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_dz07zo.jpg",
+   "title": "Фирменный LIDO бургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1990,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья, котлета куриная, лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
+  },
+  {
+   "id": "19",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885773/LIDO%20COMPRESSED/%D1%88%D0%B5%D1%84_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_avv2fa.jpg",
+   "title": "Шеф Бургер (острый)",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1590,
+   "category": 3,
+   "rating": 10,
+   "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, колбаска охотничья, перчик халапеньо, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
    "id": "20",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509734/LIDO/%D0%B4%D0%BE%D0%BD%D0%B5%D1%80_%D0%B1%D0%BE%D0%BA%D1%81_xf2bhv.png",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660819/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D1%88%D0%B5%D1%84%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_gbrov9.jpg",
+   "title": "Комбо Шеф Бургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2390,
+   "category": 4,
+   "rating": 9,
+   "description": "Шеф Бургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "21",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660819/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D1%87%D0%B8%D0%BA%D0%B5%D0%BD_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_fui4qt.jpg",
+   "title": "Комбо Чикен",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1990,
+   "category": 4,
+   "rating": 9,
+   "description": "Чикен Бургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "22",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660819/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_tl1iae.jpg",
+   "title": "Комбо Чизбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2190,
+   "category": 4,
+   "rating": 9,
+   "description": "Чизбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "23",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660818/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D0%BB%D0%B8%D0%B4%D0%BE_%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_mosiuu.jpg",
+   "title": "Комбо LIDO",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2590,
+   "category": 4,
+   "rating": 9,
+   "description": "LIDO бургер, картофель фри, соус на выбор, Coca-Cola 0.5l"
+  },
+  {
+   "id": "24",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660818/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_lkd9oi.jpg",
+   "title": "Комбо Гамбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2090,
+   "category": 4,
+   "rating": 9,
+   "description": "Гамбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "25",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660818/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_2%D1%85_%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_cz9yxq.jpg",
+   "title": "Комбо 2х Чизбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2990,
+   "category": 4,
+   "rating": 9, 
+   "description": "2х Чизбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "26",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660817/LIDO%20COMPRESSED/%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE_2%D1%85_%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80_pjaham.jpg",
+   "title": "Комбо 2х Гамбургер",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2890,
+   "category": 4,
+   "rating": 9,
+   "description": "2х Гамбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "27",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885773/LIDO%20COMPRESSED/%D0%B3%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B8%CC%86_%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D1%8B%D0%B8%CC%86_jfpwlg.jpg",
+   "title": "Комбо Грибной куриный",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2090,
+   "category": 4,
+   "rating": 9,
+   "description": "Грибной куриный, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "28",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885773/LIDO%20COMPRESSED/%D0%B3%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B8%CC%86_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B6%D0%B8%D0%B8%CC%86_cm5dra.jpg",
+   "title": "Комбо Грибной говяжий",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 2190,
+   "category": 4,
+   "rating": 9,
+   "description": "Грибной говяжий, картофель фри, соус на выбор, Coca-Cola 0.5l"  
+  },
+  {
+   "id": "29",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660817/LIDO%20COMPRESSED/%D0%B4%D0%BE%D0%BD%D0%B5%D1%80_%D0%BD%D0%B0_%D0%BC%D0%B0%D0%BD%D0%B3%D0%B0%D0%BB%D0%B5_gh8ofv.jpg",
+   "title": "Донер на мангале с курицей",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1190,
+   "category": 5,
+   "rating": 8, 
+   "description": "лаваш, куриное мясо на мангале, капуста, морковь, огурцы, помидоры, фирменный соус"  
+  },
+  {
+   "id": "30",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/%D0%B4%D0%BE%D0%BD%D0%B5%D1%80_%D0%B2_%D0%B1%D0%B0%D1%82%D0%BE%D0%BD%D0%B5_z6mpfm.jpg",
+   "title": "Донер в батоне с курицей",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 1290,
+   "category": 5,
+   "rating": 8, 
+   "description": "батон, куриное мясо на мангале, капуста, морковь, огурцы, помидоры, фирменный соус"  
+  },
+  {
+   "id": "31",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/%D0%B4%D0%BE%D0%BD%D0%B5%D1%80_%D0%B1%D0%BE%D0%BA%D1%81_zjtlrc.jpg",
    "title": "Донер бокс",
    "types": [
     0,
@@ -346,12 +564,13 @@
     40
    ],
    "price": 1490,
-   "category": 3,
-   "rating": 8
+   "category": 5,
+   "rating": 8, 
+   "description": "куриное мясо на мангале, картофель фри, фирменный соус"  
   },
   {
-   "id": "21",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509734/LIDO/%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%84%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%B4%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8_x6zsen.png",
+   "id": "32",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660817/LIDO%20COMPRESSED/%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D1%84%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%B4%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8_kgn8si.jpg",
    "title": "Картофельные дольки",
    "types": [
     0,
@@ -363,12 +582,13 @@
     40
    ],
    "price": 550,
-   "category": 4,
-   "rating": 7
+   "category": 6,
+   "rating": 7,
+   "description": "110 гр."  
   },
   {
-   "id": "22",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509734/LIDO/%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%84%D0%B5%D0%BB%D1%8C_%D1%84%D1%80%D0%B8_yg8nb9.png",
+   "id": "33",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660818/LIDO%20COMPRESSED/%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%84%D0%B5%D0%BB%D1%8C_%D1%84%D1%80%D0%B8_jceesp.jpg",
    "title": "Картофель фри",
    "types": [
     0,
@@ -380,12 +600,31 @@
     40
    ],
    "price": 550,
-   "category": 4,
-   "rating": 7
+   "category": 6,
+   "rating": 7, 
+   "description": "110 гр."  
   },
   {
-   "id": "23",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509733/LIDO/%D0%A1%D0%BE%D1%83%D1%81_%D1%81%D1%8B%D1%80%D0%BD%D1%8B%D0%B8%CC%86_%D0%90%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_ctxjxo.jpg",
+   "id": "34",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660885772/LIDO%20COMPRESSED/IMG_9586_dihgdd.jpg",
+   "title": "Куриные палочки",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 900,
+   "category": 6,
+   "rating": 7, 
+   "description": "7 шт."  
+  },
+  {
+   "id": "35",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660821/LIDO%20COMPRESSED/%D0%A1%D0%BE%D1%83%D1%81_%D1%81%D1%8B%D1%80%D0%BD%D1%8B%D0%B8%CC%86_%D0%90%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_1_svgbha.jpg",
    "title": "Соус сырный Astoria",
    "types": [
     0,
@@ -397,12 +636,13 @@
     40
    ],
    "price": 120,
-   "category": 5,
-   "rating": 6
+   "category": 7,
+   "rating": 6,
+   "description": ""  
   },
   {
-   "id": "24",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509733/LIDO/%D0%A1%D0%BE%D1%83%D1%81_%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D1%8B%D0%B8%CC%86_%D0%90%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_ufdhjn.jpg",
+   "id": "36",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660661707/LIDO%20COMPRESSED/%D0%A1%D0%BE%D1%83%D1%81_%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D1%8B%D0%B8%CC%86_%D0%90%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_sn4pzy.jpg",
    "title": "Соус томатный Astoria",
    "types": [
     0,
@@ -414,12 +654,13 @@
     40
    ],
    "price": 120,
-   "category": 5,
-   "rating": 6
+   "category": 7,
+   "rating": 6,
+   "description": ""  
   },
   {
-   "id": "25",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509732/LIDO/%D0%A1%D0%BE%D1%83%D1%81_%D0%B1%D0%B0%D1%80%D0%B1%D0%B5%D0%BA%D1%8E_%D0%90%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_l2g7gc.jpg",
+   "id": "37",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660821/LIDO%20COMPRESSED/%D0%A1%D0%BE%D1%83%D1%81_%D0%B1%D0%B0%D1%80%D0%B1%D0%B5%D0%BA%D1%8E_%D0%90%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_1_hd3u7d.jpg",
    "title": "Соус барбекю Astoria",
    "types": [
     0,
@@ -431,12 +672,13 @@
     40
    ],
    "price": 120,
-   "category": 5,
-   "rating": 6
+   "category": 7,
+   "rating": 6,
+   "description": ""  
   },
   {
-   "id": "26",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509732/LIDO/Coca-Cola_0.5l_rhqrx8.jpg",
+   "id": "38",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/Coca-Cola_0.5l_mvefgi.jpg",
    "title": "Coca-cola 0,5l",
    "types": [
     0,
@@ -448,12 +690,13 @@
     40
    ],
    "price": 350,
-   "category": 6,
-   "rating": 5
+   "category": 8,
+   "rating": 5,
+   "description": ""  
   },
   {
-   "id": "27",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509733/LIDO/Coca-Cola_1l_swhb8l.jpg",
+   "id": "39",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/Coca-Cola_1l_ytc0tb.jpg",
    "title": "Coca-cola 1l",
    "types": [
     0,
@@ -465,12 +708,13 @@
     40
    ],
    "price": 550,
-   "category": 6,
-   "rating": 5
+   "category": 8,
+   "rating": 5, 
+   "description": ""  
   },
   {
-   "id": "28",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509732/LIDO/Fuse_tea_0_ee2mai.jpg",
+   "id": "40",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1661254709/LIDO%20COMPRESSED/22112020235346_e14085d04d6a11b1bbb042e8e9fd3095_ishq7n.jpg",
    "title": "Fuse Tea",
    "types": [
     0,
@@ -482,12 +726,13 @@
     40
    ],
    "price": 350,
-   "category": 6,
-   "rating": 5
+   "category": 8,
+   "rating": 5,
+   "description": ""  
   },
   {
-   "id": "29",
-   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1659509732/LIDO/Piko_Pulpy_0_5l_srckcb.jpg",
+   "id": "41",
+   "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/Piko_Pulpy_0_5l_udirwc.jpg",
    "title": "Piko Pulpy",
    "types": [
     0,
@@ -499,7 +744,8 @@
     40
    ],
    "price": 450,
-   "category": 6,
-   "rating": 5
+   "category": 8,
+   "rating": 5,
+   "description": ""  
   }
  ]

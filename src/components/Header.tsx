@@ -2,27 +2,27 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import logoSvg from '../assets/img/pizza-logo.svg'
+import logoSvg from '../assets/img/lido_logo.jpeg'
 import Search from './Search'
 import { selectCart } from '../redux/slices/cartSlice'
 
-const Header = () => {
+const Header: React.FC = () => {
   const { items, totalPrice } = useSelector(selectCart)
 
   const { pathname } = useLocation()
 
-  const totalCount = items.reduce((acc, rec) => acc + rec.count, 0)
+  const totalCount = items.reduce((acc: number, rec: any) => acc + rec.count, 0)
 
   return (
     <div className='header'>
       <div className='container'>
         <Link to='/'>
           <div className='header__logo'>
-            <img width='38' src={logoSvg} alt='Pizza logo' />
-            <div>
+            <img src={logoSvg} alt='Pizza logo' />
+            {/* <div>
               <h1>Lido Burger & Pizza</h1>
-              {/* <p>самая вкусная пицца во вселенной</p> */}
-            </div>
+              <p>самая вкусная пицца во вселенной</p>
+            </div> */}
           </div>
         </Link>
         <Search />
