@@ -115,7 +115,7 @@ const Home: React.FC = () => {
     <div className='container'>
       <div className='content__top'>
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
-        <Sort />
+        {/* <Sort /> */}
       </div>
       <h2 className='content__title'>{category[1]}</h2>
       {status === 'error' ? (
