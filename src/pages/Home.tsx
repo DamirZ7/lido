@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import qs from 'qs'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 
 import Categories from '../components/Categories'
@@ -9,12 +9,18 @@ import PizzaBlock from '../components/PizzaBlock'
 import Skeleton from '../components/PizzaBlock/Skeleton'
 import { category } from '../components/Categories'
 
-import { selectFilter, setCategoryId, setFilters } from '../redux/slices/filterSlice'
-import { fetchPizzas, selectPizzaData } from '../redux/slices/pizzaSlice'
+import {
+  FilterSliceState,
+  selectFilter,
+  setCategoryId,
+  setFilters,
+} from '../redux/slices/filterSlice'
+import { fetchPizzas, SearchPizzaParams, selectPizzaData } from '../redux/slices/pizzaSlice'
+import { useAppDispatch } from '../redux/store'
 
 const Home: React.FC = () => {
   const navigate = useNavigate()
-  const dispatch = useDispatch()
+  const dispatch = useAppDispatch()
   const isSearch = useRef(false)
   const isMounted = useRef(false)
 
@@ -26,17 +32,15 @@ const Home: React.FC = () => {
   }
 
   const getPizzas = async () => {
-    // setIsLoading(true)
-
     const category = categoryId > 0 ? `category=${categoryId}` : ''
     const search = searchValue ? `&search=${searchValue}` : ''
+    const sortBy = sort.sortProperty
 
     dispatch(
-      //@ts-ignore
       fetchPizzas({
         category,
         search,
-        sort,
+        sortBy,
       }),
     )
 
@@ -58,14 +62,15 @@ const Home: React.FC = () => {
   //  Если был первый рендер, то проверяем URL-параметры и сохраняем в редаксе
   useEffect(() => {
     if (window.location.search) {
-      const params = qs.parse(window.location.search.substring(1))
+      const params = qs.parse(window.location.search.substring(1)) as unknown as SearchPizzaParams
 
-      const sort = sortArr.find((obj) => obj.sortProperty === params.sortProperty)
+      const sort = sortArr.find((obj) => obj.sortProperty === params.sortBy)
 
       dispatch(
         setFilters({
-          ...params,
-          sort,
+          searchValue: params.search,
+          categoryId: Number(params.category),
+          sort: sort || sortArr[0],
         }),
       )
       isSearch.current = true
@@ -74,11 +79,6 @@ const Home: React.FC = () => {
 
   // Если был первый рендер, то запрашиваем пиццы
   useEffect(() => {
-    // window.scrollTo({
-    //   top: 0,
-    //   behavior: 'smooth',
-    // })
-
     if (!isSearch.current) {
       getPizzas()
     }
@@ -86,39 +86,17 @@ const Home: React.FC = () => {
     isSearch.current = false
   }, [categoryId, sort.sortProperty, searchValue])
 
+  const pizzas = items.map((item: any) => <PizzaBlock key={item.id} {...item} />)
   const skeleton = [...new Array(6)].map((_, index) => <Skeleton key={index} />)
-
-  const pizzas = items.map((item: any, i: string) => <PizzaBlock key={i} {...item} />)
-  // const pizza_set = items.map((item, i) =>
-  //   item.category === 2 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
-  // const burgers = items.map((item, i) =>
-  //   item.category === 3 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
-  // const combo_burgers = items.map((item, i) =>
-  //   item.category === 4 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
-  // const doners = items.map((item, i) =>
-  //   item.category === 5 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
-  // const snacks = items.map((item, i) =>
-  //   item.category === 6 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
-  // const sauces = items.map((item, i) =>
-  //   item.category === 7 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
-  // const drinks = items.map((item, i) =>
-  //   item.category === 8 ? <PizzaBlock key={i} {...item} /> : '',
-  // )
 
   return (
     <div className='container'>
       <div className='content__top'>
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
-        {/* <Sort /> */}
+        <Sort />
       </div>
       <h2 className='content__title'>{category[1]}</h2>
-      {status === 'error' ? (
+      {status === 'failed' ? (
         <div className='content__error-info'>
           <h2>Произошла ошибка 😢</h2>
           <p>
@@ -128,22 +106,6 @@ const Home: React.FC = () => {
       ) : (
         <section className='content__items'>{status === 'loading' ? skeleton : pizzas}</section>
       )}
-      {/* <h2 className='content__title'>{category[2]}</h2>
-      <section className='content__items'>{status === 'loading' ? skeleton : pizza_set}</section>
-      <h2 className='content__title'>{category[3]}</h2>
-      <section className='content__items'>{status === 'loading' ? skeleton : burgers}</section>
-      <h2 className='content__title'>{category[4]}</h2>
-      <section className='content__items'>
-        {status === 'loading' ? skeleton : combo_burgers}
-      </section>
-      <h2 className='content__title'>{category[5]}</h2>
-      <section className='content__items'>{status === 'loading' ? skeleton : doners}</section>
-      <h2 className='content__title'>{category[6]}</h2>
-      <section className='content__items'>{status === 'loading' ? skeleton : snacks}</section>
-      <h2 className='content__title'>{category[7]}</h2>
-      <section className='content__items'>{status === 'loading' ? skeleton : sauces}</section>
-      <h2 className='content__title'>{category[8]}</h2>
-      <section className='content__items'>{status === 'loading' ? skeleton : drinks}</section> */}
     </div>
   )
 }
