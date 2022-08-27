@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import qs from 'qs'
 import { useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
@@ -27,9 +27,9 @@ const Home: React.FC = () => {
   const { categoryId, sort, searchValue } = useSelector(selectFilter)
   const { items, status } = useSelector(selectPizzaData)
 
-  const onChangeCategory = (id: number) => {
+  const onChangeCategory = useCallback((id: number) => {
     dispatch(setCategoryId(id))
-  }
+  }, [])
 
   const getPizzas = async () => {
     const category = categoryId > 0 ? `category=${categoryId}` : ''
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
     <div className='container'>
       <div className='content__top'>
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
-        <Sort />
+        <Sort value={sort} />
       </div>
       <h2 className='content__title'>{category[1]}</h2>
       {status === 'failed' ? (

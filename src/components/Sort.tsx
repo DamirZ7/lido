@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectSort, setSort, sortPropertyEnum } from '../redux/slices/filterSlice'
+import { selectSort, setSort, Sort, sortPropertyEnum } from '../redux/slices/filterSlice'
 
 type SortItem = {
   name: string
@@ -11,20 +11,20 @@ type PopupClick = MouseEvent & {
   path: Node[]
 }
 
+type TSortPopup = {
+  value: Sort
+}
+
 export const sortArr: SortItem[] = [
   { name: 'популярности', sortProperty: sortPropertyEnum.RATING },
   { name: 'цене', sortProperty: sortPropertyEnum.PRICE },
   { name: 'алфавиту', sortProperty: sortPropertyEnum.TITLE },
 ]
 
-const SortPopup: React.FC = () => {
+const SortPopup: React.FC<TSortPopup> = React.memo(({ value }) => {
   const dispatch = useDispatch()
-  const sort = useSelector(selectSort)
   const sortRef = useRef<HTMLDivElement>(null)
-
   const [isOpen, setIsOpen] = useState(false)
-  // const [activeSort, setActiveSort] = useState(0)
-  // const sortName = sortArr[value]
 
   const onClickListItem = (obj: SortItem) => {
     dispatch(setSort(obj))
@@ -62,7 +62,7 @@ const SortPopup: React.FC = () => {
           />
         </svg>
         <b>Сортировка по:</b>
-        <span onClick={() => setIsOpen(!isOpen)}>{sort.name}</span>
+        <span onClick={() => setIsOpen(!isOpen)}>{value.name}</span>
       </div>
       {isOpen && (
         <div className='sort__popup'>
@@ -71,7 +71,7 @@ const SortPopup: React.FC = () => {
               <li
                 key={i}
                 onClick={() => onClickListItem(obj)}
-                className={sort.sortProperty === obj.sortProperty ? 'active' : ''}>
+                className={value.sortProperty === obj.sortProperty ? 'active' : ''}>
                 {obj.name}
               </li>
             ))}
@@ -80,6 +80,6 @@ const SortPopup: React.FC = () => {
       )}
     </div>
   )
-}
+})
 
 export default SortPopup
