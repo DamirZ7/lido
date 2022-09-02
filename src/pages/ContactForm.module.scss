@@ -1,0 +1,127 @@
+.checkout {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__order {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__orderMain {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    h4 {
+      font-size: 40px;
+    }
+
+    .cartBottom {
+      margin: 50px 0;
+
+      &__details {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          font-size: 22px;
+
+          &:last-of-type {
+            b {
+              color: #fe5f1e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // &__order {
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   // margin-bottom: 30px;
+  // }
+
+  &__contentInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+  }
+  &__form {
+    // width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+
+    // &__input {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+    //   flex-grow: 1;
+    //   padding: 0 15px;
+    //   margin: 10px;
+    // }
+    input {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid rgb(94, 94, 94);
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    input[type='submit'],
+    .button {
+      position: relative;
+      background: #fe5f1e;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      font-weight: 600;
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      display: block;
+      appearance: none;
+      border-radius: 4px;
+      width: 100%;
+      font-weight: 400;
+      letter-spacing: 0.5rem;
+      transition: 0.3s all;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    input[type='submit']:active {
+      transition: 0.3s all;
+      top: 2px;
+    }
+  }
+}

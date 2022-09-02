@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { selectSort, setSort, Sort, sortPropertyEnum } from '../redux/slices/filterSlice'
+import { setSort } from '../redux/filter/slice'
+import { Sort, sortPropertyEnum } from '../redux/filter/types'
 
 type SortItem = {
   name: string

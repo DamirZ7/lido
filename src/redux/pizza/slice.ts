@@ -1,55 +1,12 @@
-import axios from 'axios'
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit'
-import { RootState } from '../store'
-import { CartItem } from './cartSlice'
-import { Sort } from './filterSlice'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-type Pizza = {
-  id: string
-  title: string
-  price: number
-  count: number
-  imageUrl: string
-  sizes: number[]
-  types: string[]
-  description: string
-}
-
-export enum Status {
-  LOADING = 'loading',
-  SUCCESS = 'success',
-  FAILED = 'failed',
-}
-
-interface PizzaSliceState {
-  items: Pizza[]
-  status: 'loading' | 'success' | 'failed'
-}
+import { fetchPizzas } from './asyncActions'
+import { Pizza, PizzaSliceState, SearchPizzaParams, Status } from './types'
 
 const initialState: PizzaSliceState = {
   items: [],
   status: Status.LOADING, // loading | success | error
 }
-
-export type SearchPizzaParams = {
-  category: string
-  search: string
-  sortBy: string
-}
-
-export const fetchPizzas = createAsyncThunk<Pizza[], SearchPizzaParams>(
-  'pizza/fetchPizzasStatus',
-  async (params) => {
-    const { category, search, sortBy } = params
-    console.log(params)
-    console.log(sortBy)
-    const { data } = await axios.get<Pizza[]>(
-      `https://628f0d9a0e69410599d480ad.mockapi.io/items?${category}&sortBy=${sortBy}&order=desc${search}`,
-    )
-
-    return data
-  },
-)
 
 const pizzaSlice = createSlice({
   name: 'pizza',
@@ -88,8 +45,6 @@ const pizzaSlice = createSlice({
   //   },
   // },
 })
-
-export const selectPizzaData = (state: RootState) => state.pizza
 
 export const { setItems } = pizzaSlice.actions
 

@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 import logoSvg from '../assets/img/lido_logo.jpeg'
 import Search from './Search'
-import { selectCart } from '../redux/slices/cartSlice'
+import { selectCart } from '../redux/cart/selectors'
 
 const Header: React.FC = () => {
   const { items, totalPrice } = useSelector(selectCart)
-
   const { pathname } = useLocation()
+  const isMounted = useRef(false)
 
   const totalCount = items.reduce((acc: number, rec: any) => acc + rec.count, 0)
+
+  useEffect(() => {
+    if (isMounted.current) {
+      const json = JSON.stringify(items)
+
+      localStorage.setItem('cart', json)
+    }
+    isMounted.current = true
+  }, [items])
 
   return (
     <div className='header'>
@@ -19,13 +28,9 @@ const Header: React.FC = () => {
         <Link to='/'>
           <div className='header__logo'>
             <img src={logoSvg} alt='Pizza logo' />
-            {/* <div>
-              <h1>Lido Burger & Pizza</h1>
-              <p>самая вкусная пицца во вселенной</p>
-            </div> */}
           </div>
         </Link>
-        <Search />
+        {pathname !== '/cart' && <Search />}
         <div className='header__cart'>
           {pathname !== '/cart' && (
             <Link to='/cart' className='button button--cart'>

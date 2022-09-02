@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef } from 'react'
 import qs from 'qs'
 import { useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import Categories from '../components/Categories'
 import Sort, { sortArr } from '../components/Sort'
@@ -9,20 +9,22 @@ import PizzaBlock from '../components/PizzaBlock'
 import Skeleton from '../components/PizzaBlock/Skeleton'
 import { category } from '../components/Categories'
 
-import {
-  FilterSliceState,
-  selectFilter,
-  setCategoryId,
-  setFilters,
-} from '../redux/slices/filterSlice'
-import { fetchPizzas, SearchPizzaParams, selectPizzaData } from '../redux/slices/pizzaSlice'
 import { useAppDispatch } from '../redux/store'
+import { selectFilter } from '../redux/filter/selectors'
+import { setCategoryId, setFilters } from '../redux/filter/slice'
+import { selectPizzaData } from '../redux/pizza/selectors'
+import { fetchPizzas } from '../redux/pizza/asyncActions'
+import { SearchPizzaParams } from '../redux/pizza/types'
 
 const Home: React.FC = () => {
   const navigate = useNavigate()
   const dispatch = useAppDispatch()
   const isSearch = useRef(false)
   const isMounted = useRef(false)
+
+  // import('../utils/math').then((math) => {
+  //   console.log(math.add(777, 888))
+  // })
 
   const { categoryId, sort, searchValue } = useSelector(selectFilter)
   const { items, status } = useSelector(selectPizzaData)
@@ -63,7 +65,6 @@ const Home: React.FC = () => {
   useEffect(() => {
     if (window.location.search) {
       const params = qs.parse(window.location.search.substring(1)) as unknown as SearchPizzaParams
-
       const sort = sortArr.find((obj) => obj.sortProperty === params.sortBy)
 
       dispatch(
@@ -95,7 +96,7 @@ const Home: React.FC = () => {
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
         <Sort value={sort} />
       </div>
-      <h2 className='content__title'>{category[1]}</h2>
+      <h2 className='content__title'>{category[categoryId]}</h2>
       {status === 'failed' ? (
         <div className='content__error-info'>
           <h2>Произошла ошибка 😢</h2>

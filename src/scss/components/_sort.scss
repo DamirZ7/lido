@@ -1,6 +1,7 @@
 @import '../variables';
 
 .sort {
+  display: none;
   position: relative;
   padding: 15px 0;
   &__label {

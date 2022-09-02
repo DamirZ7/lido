@@ -1,5 +1,4 @@
 import React from 'react'
-
 import styles from './NotFoundBlock.module.scss'
 
 const NotFoundBlock: React.FC = () => {

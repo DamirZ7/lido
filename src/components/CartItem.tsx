@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addItem, CartItem, minusItem, removeItem } from '../redux/slices/cartSlice'
+import { addItem, minusItem, removeItem } from '../redux/cart/slice'
+import { CartItem } from '../redux/cart/types'
 
 type CartItemProps = {
   id: string
@@ -30,9 +31,7 @@ const CartItemBlock: React.FC<CartItemProps> = ({
   }
 
   const onClearItem = () => {
-    if (window.confirm('Вы действительно хотите удалить товар?')) {
-      dispatch(removeItem(id))
-    }
+    dispatch(removeItem(id))
   }
 
   const onClickMinus = () => {
