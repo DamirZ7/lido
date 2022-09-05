@@ -10,8 +10,9 @@
 
   transition: all 0.2s ease-in-out;
 
-  @media (max-width: 500px) {
+  @media (max-width: 620px) {
     margin-bottom: 120px;
+    flex-grow: 0;
   }
 
   &:hover {
@@ -55,10 +56,11 @@
     margin-left: 10px;
     text-align: left;
 
-    @media (max-width: 500px) {
+    @media (max-width: 620px) {
       font-size: 15px;
       margin-bottom: 15px;
-      height: 6.2rem;
+      height: auto;
+      // height: 6.2rem;
     }
   }
 
