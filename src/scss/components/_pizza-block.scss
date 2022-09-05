@@ -9,6 +9,10 @@
   margin-bottom: 75px;
   transition: all 0.2s ease-in-out;
 
+  @media (max-width: 500px) {
+    margin-bottom: 120px;
+  }
+
   &:hover {
     transform: scale(1.02);
   }
@@ -31,6 +35,11 @@
     margin-bottom: 12px;
     margin-top: 16px;
     text-align: left;
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
 
   &__selector {
@@ -41,6 +50,12 @@
     letter-spacing: 1%;
     margin-bottom: 20px;
     text-align: left;
+
+    @media (max-width: 500px) {
+      font-size: 15px;
+      margin-bottom: 15px;
+      height: 6.2rem;
+    }
   }
 
   &__text {
@@ -54,6 +69,10 @@
     margin-top: 20px;
     height: 40px;
     padding: 5px;
+
+    @media (max-width: 500px) {
+      height: 33px;
+    }
   }
 
   &__price {
