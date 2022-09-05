@@ -22,10 +22,6 @@ const Home: React.FC = () => {
   const isSearch = useRef(false)
   const isMounted = useRef(false)
 
-  // import('../utils/math').then((math) => {
-  //   console.log(math.add(777, 888))
-  // })
-
   const { categoryId, sort, searchValue } = useSelector(selectFilter)
   const { items, status } = useSelector(selectPizzaData)
 
