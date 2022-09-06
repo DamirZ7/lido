@@ -19,6 +19,8 @@ const Cart: React.FC = () => {
     }
   }
 
+  window.scrollTo(0, 0)
+
   if (!totalPrice) {
     return <CartEmpty />
   }
