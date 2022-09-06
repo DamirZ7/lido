@@ -34,10 +34,6 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({
 
   const addedCount = cartItem ? cartItem.count : 0
 
-  // const onClickAddCounter = () => {
-  //   setCounter(counter + 1)
-  // }
-
   const onClickAdd = () => {
     const item: CartItem = {
       id,
