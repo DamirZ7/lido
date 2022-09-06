@@ -132,7 +132,7 @@ body {
 
       .categories {
         margin-top: 5px;
-        margin-bottom: -10px;
+        margin-bottom: -5px;
         padding: 0px;
       }
     }
@@ -166,7 +166,7 @@ body {
     justify-content: space-between;
     align-items: center;
     @media (max-width: 768px) {
-      // flex-direction: column;
+      padding: 10px;
 
       .content__title {
         // margin-bottom: 20px;
