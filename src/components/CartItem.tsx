@@ -54,7 +54,7 @@ const CartItemBlock: React.FC<CartItemProps> = ({
         <button
           disabled={count === 1}
           onClick={onClickMinus}
-          className='button button--outline button--circle cart__item-count-minus'>
+          className='button button--outline button--circleCart cart__item-count-minus'>
           <svg
             width='10'
             height='10'
@@ -72,7 +72,7 @@ const CartItemBlock: React.FC<CartItemProps> = ({
         <b>{count}</b>
         <button
           onClick={onClickPlus}
-          className='button button--outline button--circle cart__item-count-plus'>
+          className='button button--outline button--circleCart cart__item-count-plus'>
           <svg
             width='10'
             height='10'
@@ -93,7 +93,7 @@ const CartItemBlock: React.FC<CartItemProps> = ({
       </div>
       {pathname !== '/cart/checkout' && (
         <div className='cart__item-remove'>
-          <div onClick={onClearItem} className='button button--outline button--circle'>
+          <div onClick={onClearItem} className='button button--outline button--circleCart'>
             <svg
               width='10'
               height='10'
