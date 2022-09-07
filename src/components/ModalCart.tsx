@@ -12,11 +12,7 @@ const ModalCart = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        setShowBtn(true)
-      } else {
-        setShowBtn(false)
-      }
+      return window.scrollY > 100 ? setShowBtn(true) : setShowBtn(false)
     })
   }, [])
 

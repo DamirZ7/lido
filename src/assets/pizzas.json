@@ -14,7 +14,7 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, сыр «Адыгейский», сыр «Пармезан», сыр «Моцарелла»"
   },
   {
@@ -30,7 +30,7 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, куриное филе, айсберг, черри, соус «Цезарь», сыр «Моцарелла», сыр «Пармезан»"
   },
   {
@@ -46,7 +46,7 @@
    ],
    "price": 2390,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, сёмга, маслины, кунжут чёрный, соус «Терияки», сыр «Моцарелла»"
   },
   {
@@ -63,7 +63,7 @@
    ],
    "price": 2290,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, фарш говяжий халал, помидоры, сыр «Моцарелла»"
   },
   {
@@ -81,7 +81,7 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, колбаски «Охотничьи» халал, красный лук, сыр «Моцарелла», орегано"
   },
   {
@@ -97,7 +97,7 @@
    ],
    "price": 1690,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, помидоры, сыр «Моцарелла», орегано"
   },
   {
@@ -115,7 +115,7 @@
    ],
    "price": 2190,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, куриное филе, шампиньоны, сыр «Моцарелла», орегано"
   },
   {
@@ -133,7 +133,7 @@
    ],
    "price": 1990,
    "category": 1,
-   "rating": 10,
+   "rating": 1,
    "description": "фирменный соус, колбаса говяжья халал, сыр «Моцарелла», орегано"
   },
   {
@@ -151,7 +151,7 @@
    ],
    "price": 3990,
    "category": 2,
-   "rating": 10,
+   "rating": 2,
    "description": "Болоньезе, Маргарита"
   },
   {
@@ -169,7 +169,7 @@
    ],
    "price": 5190,
    "category": 2,
-   "rating": 10,
+   "rating": 2,
    "description": "Охотничья, Цезарь, Маргарита"
   },
   {
@@ -187,7 +187,7 @@
    ],
    "price": 5890,
    "category": 2,
-   "rating": 10,
+   "rating": 2,
    "description": "Болоньезе, Куриная с грибами, Колбасная"
   },
   {
@@ -205,7 +205,7 @@
    ],
    "price": 1190,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета куриная, лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -223,7 +223,7 @@
    ],
    "price": 1290,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -241,7 +241,7 @@
    ],
    "price": 1390,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -259,7 +259,7 @@
    ],
    "price": 2190,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья – 2 шт., лист салата, помидор свежий, корнишоны, красный лук, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -277,7 +277,7 @@
    ],
    "price": 2290,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья – 2 шт., лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -295,7 +295,7 @@
    ],
    "price": 1290,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета куриная, лист салата, помидор свежий, корнишоны, красный лук, жареные шампиньоны, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -313,7 +313,7 @@
    ],
    "price": 1390,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, жареные шампиньоны, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -331,7 +331,7 @@
    ],
    "price": 1990,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья, котлета куриная, лист салата, помидор свежий, корнишоны, красный лук, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -349,7 +349,7 @@
    ],
    "price": 1590,
    "category": 3,
-   "rating": 10,
+   "rating": 3,
    "description": "фирменная булочка, котлета говяжья, лист салата, помидор свежий, корнишоны, красный лук, колбаска охотничья, перчик халапеньо, сыр чеддер, соус Ранч, соус фирменный “Lido”"
   },
   {
@@ -367,7 +367,7 @@
    ],
    "price": 2390,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "Шеф Бургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -385,7 +385,7 @@
    ],
    "price": 1990,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "Чикен Бургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -403,7 +403,7 @@
    ],
    "price": 2190,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "Чизбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -421,7 +421,7 @@
    ],
    "price": 2590,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "LIDO бургер, картофель фри, соус на выбор, Coca-Cola 0.5l"
   },
   {
@@ -439,7 +439,7 @@
    ],
    "price": 2090,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "Гамбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -457,7 +457,7 @@
    ],
    "price": 2990,
    "category": 4,
-   "rating": 9, 
+   "rating": 4, 
    "description": "2х Чизбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -475,7 +475,7 @@
    ],
    "price": 2890,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "2х Гамбургер, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -493,7 +493,7 @@
    ],
    "price": 2090,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "Грибной куриный, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -511,7 +511,7 @@
    ],
    "price": 2190,
    "category": 4,
-   "rating": 9,
+   "rating": 4,
    "description": "Грибной говяжий, картофель фри, соус на выбор, Coca-Cola 0.5l"  
   },
   {
@@ -529,7 +529,7 @@
    ],
    "price": 1190,
    "category": 5,
-   "rating": 8, 
+   "rating": 5, 
    "description": "лаваш, куриное мясо на мангале, капуста, морковь, огурцы, помидоры, фирменный соус"  
   },
   {
@@ -547,7 +547,7 @@
    ],
    "price": 1290,
    "category": 5,
-   "rating": 8, 
+   "rating": 5, 
    "description": "батон, куриное мясо на мангале, капуста, морковь, огурцы, помидоры, фирменный соус"  
   },
   {
@@ -565,7 +565,7 @@
    ],
    "price": 1490,
    "category": 5,
-   "rating": 8, 
+   "rating": 5, 
    "description": "куриное мясо на мангале, картофель фри, фирменный соус"  
   },
   {
@@ -583,7 +583,7 @@
    ],
    "price": 550,
    "category": 6,
-   "rating": 7,
+   "rating": 6,
    "description": "110 гр."  
   },
   {
@@ -601,7 +601,7 @@
    ],
    "price": 550,
    "category": 6,
-   "rating": 7, 
+   "rating": 6, 
    "description": "110 гр."  
   },
   {
@@ -619,7 +619,7 @@
    ],
    "price": 900,
    "category": 6,
-   "rating": 7, 
+   "rating": 6, 
    "description": "7 шт."  
   },
   {
@@ -637,7 +637,7 @@
    ],
    "price": 120,
    "category": 7,
-   "rating": 6,
+   "rating": 7,
    "description": ""  
   },
   {
@@ -655,7 +655,7 @@
    ],
    "price": 120,
    "category": 7,
-   "rating": 6,
+   "rating": 7,
    "description": ""  
   },
   {
@@ -673,13 +673,13 @@
    ],
    "price": 120,
    "category": 7,
-   "rating": 6,
+   "rating": 7,
    "description": ""  
   },
   {
    "id": "38",
    "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/Coca-Cola_0.5l_mvefgi.jpg",
-   "title": "Coca-cola 0,5l",
+   "title": "Coca-cola 0,5л",
    "types": [
     0,
     1
@@ -691,13 +691,13 @@
    ],
    "price": 350,
    "category": 8,
-   "rating": 5,
+   "rating": 8,
    "description": ""  
   },
   {
    "id": "39",
    "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/Coca-Cola_1l_ytc0tb.jpg",
-   "title": "Coca-cola 1l",
+   "title": "Coca-cola 1л",
    "types": [
     0,
     1
@@ -709,7 +709,7 @@
    ],
    "price": 550,
    "category": 8,
-   "rating": 5, 
+   "rating": 8, 
    "description": ""  
   },
   {
@@ -727,7 +727,7 @@
    ],
    "price": 350,
    "category": 8,
-   "rating": 5,
+   "rating": 8,
    "description": ""  
   },
   {
@@ -745,7 +745,25 @@
    ],
    "price": 450,
    "category": 8,
-   "rating": 5,
+   "rating": 8,
    "description": ""  
-  }
+  },
+  {
+    "id": "42",
+    "imageUrl": "https://res.cloudinary.com/dbcxxfq3l/image/upload/v1660660816/LIDO%20COMPRESSED/Piko_Pulpy_0_5l_udirwc.jpg",
+    "title": "Айран 0,3л",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 350,
+    "category": 8,
+    "rating": 8,
+    "description": ""  
+   }
  ]

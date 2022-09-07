@@ -30,8 +30,10 @@ const Home: React.FC = () => {
   }, [])
 
   const getPizzas = async () => {
-    const category = categoryId > 0 ? `category=${categoryId}` : ''
-    const search = searchValue ? `&search=${searchValue}` : ''
+    // const category = categoryId > 0 ? `category=${categoryId}` : ''
+    const category = categoryId > 0 ? String(categoryId) : ''
+    // const search = searchValue ? `&search=${searchValue}` : ''
+    const search = searchValue
     const sortBy = sort.sortProperty
 
     dispatch(
@@ -46,41 +48,41 @@ const Home: React.FC = () => {
   }
 
   // Если изменили параметры и был первый рендер
-  useEffect(() => {
-    if (isMounted.current) {
-      const queryString = qs.stringify({
-        sortProperty: sort.sortProperty,
-        categoryId,
-      })
-      navigate(`?${queryString}`)
-    }
-    isMounted.current = true
-  }, [categoryId, sort.sortProperty, searchValue])
+  // useEffect(() => {
+  //   if (isMounted.current) {
+  //     const queryString = qs.stringify({
+  //       sortProperty: sort.sortProperty,
+  //       categoryId,
+  //     })
+  //     navigate(`?${queryString}`)
+  //   }
+  //   isMounted.current = true
+  // }, [categoryId, sort.sortProperty, searchValue])
 
-  //  Если был первый рендер, то проверяем URL-параметры и сохраняем в редаксе
-  useEffect(() => {
-    if (window.location.search) {
-      const params = qs.parse(window.location.search.substring(1)) as unknown as SearchPizzaParams
-      const sort = sortArr.find((obj) => obj.sortProperty === params.sortBy)
+  // //  Если был первый рендер, то проверяем URL-параметры и сохраняем в редаксе
+  // useEffect(() => {
+  //   if (window.location.search) {
+  //     const params = qs.parse(window.location.search.substring(1)) as unknown as SearchPizzaParams
+  //     const sort = sortArr.find((obj) => obj.sortProperty === params.sortBy)
 
-      dispatch(
-        setFilters({
-          searchValue: params.search,
-          categoryId: Number(params.category),
-          sort: sort || sortArr[0],
-        }),
-      )
-      isSearch.current = true
-    }
-  }, [])
+  //     dispatch(
+  //       setFilters({
+  //         searchValue: params.search,
+  //         categoryId: Number(params.category),
+  //         sort: sort || sortArr[0],
+  //       }),
+  //     )
+  //     isSearch.current = true
+  //   }
+  // }, [])
 
   // Если был первый рендер, то запрашиваем пиццы
   useEffect(() => {
-    if (!isSearch.current) {
-      getPizzas()
-    }
-
-    isSearch.current = false
+    // if (!isSearch.current) {
+    //   getPizzas()
+    // }
+    // isSearch.current = false
+    getPizzas()
   }, [categoryId, sort.sortProperty, searchValue])
 
   const pizzas = items.map((item: any) => <PizzaBlock key={item.id} {...item} />)
@@ -90,7 +92,7 @@ const Home: React.FC = () => {
     <div className='container'>
       <div className='content__top'>
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
-        {/* <Sort value={sort} /> */}
+        <Sort value={sort} />
       </div>
       <h2 className='content__title'>{category[categoryId]}</h2>
       {status === 'failed' ? (
