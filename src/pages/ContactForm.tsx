@@ -55,7 +55,7 @@ const ContactForm = () => {
         <div className={styles.checkout__body}>
           <h4>Укажите адрес доставки</h4>
           <div className='form-row'>
-            <form onSubmit={handleSubmit(onSubmit)} className={styles.checkout__form}>
+            <form onSubmit={handleSubmit(onSubmit)} className={styles.checkout__form} method='POST'>
               <div className={styles.checkout__form__input}>
                 <label htmlFor='name'>Укажите имя</label>
                 <input type='text' id='name' placeholder='Укажите имя' {...register('name')} />

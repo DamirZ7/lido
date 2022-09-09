@@ -15,6 +15,7 @@ import { setCategoryId, setFilters } from '../redux/filter/slice'
 import { selectPizzaData } from '../redux/pizza/selectors'
 import { fetchPizzas } from '../redux/pizza/asyncActions'
 import { SearchPizzaParams } from '../redux/pizza/types'
+import banner from '../assets/img/banner1.png'
 
 const Home: React.FC = () => {
   const navigate = useNavigate()
@@ -44,6 +45,7 @@ const Home: React.FC = () => {
       }),
     )
 
+    // window.scrollTo(0, 490)
     window.scrollTo(0, 0)
   }
 
@@ -90,9 +92,12 @@ const Home: React.FC = () => {
 
   return (
     <div className='container'>
+      {/* <div className='banner'>
+        <img src={banner} alt='banner' />
+      </div> */}
       <div className='content__top'>
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
-        <Sort value={sort} />
+        {/* <Sort value={sort} /> */}
       </div>
       <h2 className='content__title'>{category[categoryId]}</h2>
       {status === 'failed' ? (

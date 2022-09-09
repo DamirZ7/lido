@@ -3,12 +3,18 @@
 
 @import 'components/all';
 
+::-webkit-scrollbar {
+  width: 0px; /* ширина scrollbar'a */
+  background: transparent; /* опционально */
+}
+
 body {
   background-color: $background;
 }
 
 .wrapper {
-  // width: calc(100vw - 10px);
+  // width: calc(100vw - 30px);
+  width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
@@ -17,9 +23,27 @@ body {
 
   @media (max-width: 645px) {
     // width: calc(100vw - 10px);
+    // width: 100vh;
     margin-top: 15px;
   }
 }
+
+// .banner {
+//   display: flex;
+//   align-items: center;
+//   align-content: center;
+//   justify-content: center;
+//   margin: 20px;
+//   padding: 20px;
+
+//   img {
+//     width: 100%;
+//     height: 400px;
+//     object-fit: cover;
+//     overflow: hidden;
+//     border-radius: 24px;
+//   }
+// }
 
 .content {
   padding: 20px 0;
@@ -114,6 +138,18 @@ body {
       }
     }
 
+    @media (max-width: 820px) {
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(20px);
+
+      .categories {
+        margin-top: 5px;
+        margin-bottom: -5px;
+        padding: 0px;
+      }
+    }
+
     @media (max-width: 500px) {
       .categories {
         ul {
@@ -124,16 +160,6 @@ body {
             font-size: 12px;
           }
         }
-      }
-    }
-
-    @media (max-width: 820px) {
-      flex-direction: column;
-
-      .categories {
-        margin-top: 5px;
-        margin-bottom: -5px;
-        padding: 0px;
       }
     }
   }

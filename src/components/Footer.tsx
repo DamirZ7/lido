@@ -15,7 +15,7 @@ const Footer = () => {
             <a href='tel:+7‒747‒714‒70‒00'>+7‒747‒714‒70‒00</a>
             <a href='mailto:lido@gmail.com'>lido@gmail.com</a>
             <a href='https://2gis.kz/pavlodar/branches/70000001043641868/firm/70000001060637118/76.991657%2C52.264157?m=76.991658%2C52.264148%2F18'>
-              Наш адрес
+              Наш адрес: ул. Ломова 183/1
             </a>
           </div>
         </div>
