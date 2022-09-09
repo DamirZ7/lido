@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 
 export const category = [
   'Все',
@@ -23,13 +22,12 @@ const Categories: React.FC<CategoriesProps> = React.memo(({ value, onChangeCateg
     <div className='categories'>
       <ul>
         {category.map((catName, i) => (
-          <motion.li
+          <li
             key={'cat_' + i}
             onClick={() => onChangeCategory(i)}
-            whileTap={{ scale: 0.8 }}
             className={value === i ? 'active' : ''}>
             {catName}
-          </motion.li>
+          </li>
         ))}
       </ul>
     </div>
