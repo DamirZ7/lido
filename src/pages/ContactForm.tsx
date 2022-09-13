@@ -8,8 +8,8 @@ import axios from 'axios'
 import styles from './ContactForm.module.scss'
 
 enum PaymentEnum {
-  kaspi = 'Kaspi перевод',
-  cash = 'Наличный расчёт',
+  Kaspi = 'Kaspi перевод',
+  Cash = 'Наличный расчёт',
 }
 interface IFormInput {
   name: string
@@ -65,6 +65,7 @@ const ContactForm = () => {
   }
 
   if (isSubmitSuccessful === true) {
+    localStorage.removeItem('cart')
     return <CompletedOrder />
   }
 
@@ -150,8 +151,8 @@ const ContactForm = () => {
               </div>
               <label htmlFor='payment'>Способ оплаты</label>
               <select {...register('payment')}>
-                <option value='kaspi'>Kaspi перевод</option>
-                <option value='cash'>Наличный расчёт</option>
+                <option value='Kaspi'>Kaspi перевод</option>
+                <option value='Cash'>Наличный расчёт</option>
               </select>
               <input type='submit' value='Заказать' />
             </form>
