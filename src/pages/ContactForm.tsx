@@ -14,7 +14,6 @@ enum PaymentEnum {
 interface IFormInput {
   name: string
   tel: number
-  email: string
   street: string
   house: number | string
   appartment: number
@@ -24,7 +23,6 @@ interface IFormInput {
 }
 
 const ContactForm = () => {
-  const dispatch = useDispatch()
   const { totalPrice, items } = useSelector(selectCart)
 
   const totalCount = items.reduce((acc: number, rec: any) => acc + rec.count, 0)
@@ -38,40 +36,15 @@ const ContactForm = () => {
     handleSubmit,
     watch,
     reset,
-    formState: { errors, isValid },
+    formState: { errors, isValid, isSubmitSuccessful },
   } = useForm<IFormInput>()
   const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
-    console.log(data)
-    const dataNames = [
-      'Имя',
-      'Номер',
-      'Почта',
-      'Улица',
-      'Дом',
-      'Квартира',
-      'Подъезд',
-      'Этаж',
-      'Оплата',
-    ]
-
-    // const order = dataNames.reduce((acc, rec, index) => ({ ...acc, [rec]: data[index] }), {})
-    // console.log(order)
-
-    console.log(items.map((it) => it))
-
-    // tgMessage += `<b>Заказ: </b> ${items.map((it) => [it.title, it.count])}\n`
-    // tgMessage += `<b>Имя: </b>${data.name}\n`
-    // tgMessage += `<b>Телефон: </b>${data.tel}\n`
-    // tgMessage += `<b>Почта: </b>${data.email}\n`
-    // tgMessage += `<b>Улица: </b>${data.street}\n`
-    // tgMessage += `<b>Дом: </b>${data.house}\n`
-    // tgMessage += `<b>Квартира: </b>${data.appartment}\n`
-    // tgMessage += `<b>Подъезд: </b>${data.entrance}\n`
-    // tgMessage += `<b>Этаж: </b>${data.floor}\n`
-    // tgMessage += `<b>Оплата: </b>${data.payment}\n`
+    const dataNames = ['Имя', 'Номер', 'Улица', 'Дом', 'Квартира', 'Подъезд', 'Этаж', 'Оплата']
 
     let tgMessage = `<b>Заявка с сайта!</b>\n`
     tgMessage += `<b>Заказ: </b>${items.map((it) => `${it.title} - ${it.count}шт.`)}\n`
+    tgMessage += `<b>Итого к оплате: </b>${totalPrice} тг.\n`
+    tgMessage += `<b>Контактные данные:</b>\n`
     for (let i = 0; i < dataNames.length; i++) {
       tgMessage += `<b>${dataNames[i]}: </b>${Object.values(data)[i]}\n`
     }
@@ -83,21 +56,17 @@ const ContactForm = () => {
         text: tgMessage,
       })
       .then((res) => {
-        reset()
+        console.log(res.status)
+        // reset()
       })
       .catch((err) => {
         console.warn(err)
       })
-      .finally(() => {
-        console.log('Отправлено')
-      })
   }
 
-  // if (register.name !== undefined) {
-  //   return <CompletedOrder />
-  // }
-
-  // firstName and lastName will have correct type
+  if (isSubmitSuccessful === true) {
+    return <CompletedOrder />
+  }
 
   return (
     <div className={styles.checkout}>
@@ -161,12 +130,8 @@ const ContactForm = () => {
               <div style={{ margin: '5px', color: '#f20202' }}>
                 {errors?.tel && <p>{errors?.tel?.message}</p>}
               </div>
-              <label htmlFor='email'>Укажите email</label>
-              <input type='email' id='email' placeholder='Укажите email' {...register('email')} />
-              <label htmlFor='street'>Укажите улицу</label>
               <input type='text' id='street' placeholder='Улица' {...register('street')} />
               <div className={styles.checkout__formStreet}>
-                {/* <label htmlFor='house'>Укажите дом</label> */}
                 <input
                   type='text'
                   pattern='[0-9]*'
@@ -174,16 +139,13 @@ const ContactForm = () => {
                   placeholder='Дом'
                   {...register('house')}
                 />
-                {/* <label htmlFor='appartment'>Укажите квартиру</label> */}
                 <input
                   type='text'
                   id='appartment'
                   placeholder='Квартира'
                   {...register('appartment')}
                 />
-                {/* <label htmlFor='entrance'>Укажите подъезд</label> */}
                 <input type='text' id='entrance' placeholder='Подъезд' {...register('entrance')} />
-                {/* <label htmlFor='floor'>Укажите этаж</label> */}
                 <input type='text' id='floor' placeholder='Этаж' {...register('floor')} />
               </div>
               <label htmlFor='payment'>Способ оплаты</label>
@@ -191,9 +153,6 @@ const ContactForm = () => {
                 <option value='kaspi'>Kaspi перевод</option>
                 <option value='cash'>Наличный расчёт</option>
               </select>
-              {/* <div style={{ margin: '10px', color: '#f20202' }}>
-                {errors?.payment && <p>{errors?.payment?.message || 'Ошибка!'}</p>}
-              </div> */}
               <input type='submit' value='Заказать' />
             </form>
           </div>
