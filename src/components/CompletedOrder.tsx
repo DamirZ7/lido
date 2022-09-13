@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ordered from '../assets/img/ordered.jpg'
+import ordered from '../assets/img/ordered.jpeg'
 
 const CompletedOrder = () => {
   return (

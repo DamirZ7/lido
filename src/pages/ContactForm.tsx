@@ -42,8 +42,8 @@ const ContactForm = () => {
     const dataNames = ['Имя', 'Номер', 'Улица', 'Дом', 'Квартира', 'Подъезд', 'Этаж', 'Оплата']
 
     let tgMessage = `<b>Заявка с сайта!</b>\n`
-    tgMessage += `<b>Заказ: </b>${items.map((it) => `${it.title} - ${it.count}шт.`)}\n`
-    tgMessage += `<b>Итого к оплате: </b>${totalPrice} тг.\n`
+    tgMessage += `<b>Заказ: </b>${items.map((it) => `<i>${it.title} - ${it.count}шт.\n</i>`)}`
+    tgMessage += `<b>Итого к оплате: </b>${totalPrice} тг.\n\n`
     tgMessage += `<b>Контактные данные:</b>\n`
     for (let i = 0; i < dataNames.length; i++) {
       tgMessage += `<b>${dataNames[i]}: </b>${Object.values(data)[i]}\n`
