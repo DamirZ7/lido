@@ -131,6 +131,7 @@ const ContactForm = () => {
               <div style={{ margin: '5px', color: '#f20202' }}>
                 {errors?.tel && <p>{errors?.tel?.message}</p>}
               </div>
+              <label htmlFor='street'>Укажите адрес</label>
               <input type='text' id='street' placeholder='Улица' {...register('street')} />
               <div className={styles.checkout__formStreet}>
                 <input
@@ -151,8 +152,8 @@ const ContactForm = () => {
               </div>
               <label htmlFor='payment'>Способ оплаты</label>
               <select {...register('payment')}>
-                <option value='Kaspi'>Kaspi перевод</option>
-                <option value='Cash'>Наличный расчёт</option>
+                <option value={PaymentEnum.Kaspi}>Kaspi перевод</option>
+                <option value={PaymentEnum.Cash}>Наличный расчёт</option>
               </select>
               <input type='submit' value='Заказать' />
             </form>

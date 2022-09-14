@@ -138,11 +138,15 @@
       display: block;
       box-sizing: border-box;
       width: 100%;
-      border-radius: 10px;
-      border: 1px solid rgb(94, 94, 94);
+      // border-radius: 10px;
+      // border: 1px solid rgb(94, 94, 94);
       padding: 10px 15px;
       margin-bottom: 15px;
       font-size: 16px;
+      border: 1px solid #dee2e5;
+      border-radius: 30px;
+      background: white;
+      box-shadow: 0 1px 3px -2px #9098a9;
     }
 
     input[type='submit'],
@@ -179,9 +183,21 @@
     }
 
     select {
-      border-radius: 10px;
+      // border-radius: 10px;
+      // transition: all 150ms ease;
+      padding: 10px 35px 10px 15px;
+      outline: none;
+      appearance: none;
+      cursor: pointer;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #e8eaed;
+      border-radius: 30px;
+      background: white;
+      box-shadow: 0 1px 3px -2px #9098a9;
+      font-family: inherit;
+      font-size: 16px;
       transition: all 150ms ease;
-      padding: 10px;
     }
 
     // select {
