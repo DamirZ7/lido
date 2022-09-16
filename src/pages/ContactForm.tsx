@@ -27,8 +27,8 @@ const ContactForm = () => {
 
   const totalCount = items.reduce((acc: number, rec: any) => acc + rec.count, 0)
 
-  const TOKEN = '5657175590:AAGfqA-G_2e1CCE-Kyhv1Rh-6irc0pjKqNM'
-  const CHAT_ID = '-1001154252186'
+  const TOKEN = process.env.REACT_APP_TOKEN
+  const CHAT_ID = process.env.REACT_APP_CHAT_ID
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
 
   const {
@@ -56,7 +56,7 @@ const ContactForm = () => {
         text: tgMessage,
       })
       .then((res) => {
-        console.log(res.status)
+        // console.log(res.status)
         // reset()
       })
       .catch((err) => {
@@ -65,7 +65,7 @@ const ContactForm = () => {
   }
 
   if (isSubmitSuccessful === true) {
-    localStorage.removeItem('cart')
+    // localStorage.removeItem('cart')
     return <CompletedOrder />
   }
 
