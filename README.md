@@ -1,4 +1,4 @@
-https://lido-website.onrender.com/
+https://lido-one.vercel.app/
 
 # Getting Started with Create React App
 
