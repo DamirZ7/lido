@@ -546,6 +546,23 @@ body {
         font-weight: 600;
         width: 210px;
         padding: 16px;
+        background-color: rgb(254, 95, 30);
+        background-color: linear-gradient(
+          61deg,
+          rgba(254, 95, 30, 1) 47%,
+          rgba(255, 193, 70, 1) 92%
+        );
+        transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+
+        &:hover {
+          // scale: 0.99;
+          background-color: darken($orange, 12%);
+          transform: translateY(1px);
+
+          // span {
+          //   color: $gray-line;
+          // }
+        }
       }
 
       @media (max-width: 500px) {

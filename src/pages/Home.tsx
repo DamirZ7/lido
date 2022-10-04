@@ -1,10 +1,8 @@
 import React, { useCallback, useEffect, useRef } from 'react'
-import qs from 'qs'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 import Categories from '../components/Categories'
-import Sort, { sortArr } from '../components/Sort'
 import PizzaBlock from '../components/PizzaBlock'
 import Skeleton from '../components/PizzaBlock/Skeleton'
 import { category } from '../components/Categories'
@@ -14,8 +12,6 @@ import { selectFilter } from '../redux/filter/selectors'
 import { setCategoryId, setFilters } from '../redux/filter/slice'
 import { selectPizzaData } from '../redux/pizza/selectors'
 import { fetchPizzas } from '../redux/pizza/asyncActions'
-import { SearchPizzaParams } from '../redux/pizza/types'
-import banner from '../assets/img/banner1.png'
 
 const Home: React.FC = () => {
   const navigate = useNavigate()
@@ -31,9 +27,7 @@ const Home: React.FC = () => {
   }, [])
 
   const getPizzas = async () => {
-    // const category = categoryId > 0 ? `category=${categoryId}` : ''
     const category = categoryId > 0 ? String(categoryId) : ''
-    // const search = searchValue ? `&search=${searchValue}` : ''
     const search = searchValue
     const sortBy = sort.sortProperty
 
@@ -44,46 +38,9 @@ const Home: React.FC = () => {
         sortBy,
       }),
     )
-
-    // window.scrollTo(0, 490)
     window.scrollTo(0, 0)
   }
-
-  // Если изменили параметры и был первый рендер
-  // useEffect(() => {
-  //   if (isMounted.current) {
-  //     const queryString = qs.stringify({
-  //       sortProperty: sort.sortProperty,
-  //       categoryId,
-  //     })
-  //     navigate(`?${queryString}`)
-  //   }
-  //   isMounted.current = true
-  // }, [categoryId, sort.sortProperty, searchValue])
-
-  // //  Если был первый рендер, то проверяем URL-параметры и сохраняем в редаксе
-  // useEffect(() => {
-  //   if (window.location.search) {
-  //     const params = qs.parse(window.location.search.substring(1)) as unknown as SearchPizzaParams
-  //     const sort = sortArr.find((obj) => obj.sortProperty === params.sortBy)
-
-  //     dispatch(
-  //       setFilters({
-  //         searchValue: params.search,
-  //         categoryId: Number(params.category),
-  //         sort: sort || sortArr[0],
-  //       }),
-  //     )
-  //     isSearch.current = true
-  //   }
-  // }, [])
-
-  // Если был первый рендер, то запрашиваем пиццы
   useEffect(() => {
-    // if (!isSearch.current) {
-    //   getPizzas()
-    // }
-    // isSearch.current = false
     getPizzas()
   }, [categoryId, sort.sortProperty, searchValue])
 
@@ -92,9 +49,6 @@ const Home: React.FC = () => {
 
   return (
     <div className='container'>
-      {/* <div className='banner'>
-        <img src={banner} alt='banner' />
-      </div> */}
       <div className='content__top'>
         <Categories value={categoryId} onChangeCategory={onChangeCategory} />
         {/* <Sort value={sort} /> */}
