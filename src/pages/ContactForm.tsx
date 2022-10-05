@@ -24,14 +24,10 @@ interface IFormInput {
   entrance: number
   floor: number
   payment: PaymentEnum
+  tips: string
   comment: string
   delivery: DeliveryEnum
 }
-
-// type InOrOutProps = {
-//   value: number
-//   onChangeCategory: (i: number) => void
-// }
 
 const inOrOutOrder = ['Доставка', 'Самовывоз']
 
@@ -39,23 +35,28 @@ const ContactForm = () => {
   const { totalPrice, items } = useSelector(selectCart)
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const onClickInOrOut = (i: number) => {
-    setActiveIndex(i)
-  }
-
-  // const totalCount = items.reduce((acc: number, rec: any) => acc + rec.count, 0)
-
   const TOKEN = process.env.REACT_APP_TOKEN
   const CHAT_ID = process.env.REACT_APP_CHAT_ID
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
 
   const {
     register,
-    handleSubmit,
+    getValues,
     watch,
+    handleSubmit,
+    getFieldState,
     reset,
     formState: { errors, isValid, isSubmitSuccessful },
   } = useForm<IFormInput>()
+
+  const onClickInOrOut = (i: number) => {
+    reset()
+    setActiveIndex(i)
+  }
+
+  // console.log(getValues('payment'))
+  // console.log(getFieldState('payment'))
+  console.log(watch('payment'))
 
   const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
     console.log(data)
@@ -68,6 +69,7 @@ const ContactForm = () => {
       'Подъезд',
       'Этаж',
       'Оплата',
+      'Сдача',
       'Примечание',
       'Способ доставки',
     ]
@@ -97,6 +99,7 @@ const ContactForm = () => {
 
   if (isSubmitSuccessful === true) {
     // localStorage.removeItem('cart')
+    localStorage.clear()
     return <CompletedOrder />
   }
 
@@ -201,13 +204,28 @@ const ContactForm = () => {
                   />
                   <input type='text' id='floor' placeholder='Этаж' {...register('floor')} />
                 </div>
+
                 <label htmlFor='payment'>Способ оплаты</label>
                 <select {...register('payment')}>
                   <option value={PaymentEnum.Kaspi}>{PaymentEnum.Kaspi}</option>
-                  <option value={PaymentEnum.Cash}>{PaymentEnum.Cash}</option>
+                  <option value={PaymentEnum.Cash}>{PaymentEnum.Cash} </option>
                 </select>
+                {watch('payment') === PaymentEnum.Cash ? (
+                  <>
+                    <label htmlFor='tips'>С какой купюры сдача?</label>
+                    <textarea
+                      rows={1}
+                      placeholder='5000, 10000, 20000'
+                      {...(register('tips'), { maxLength: 10 })}
+                    />
+                  </>
+                ) : null}
                 <label htmlFor='details'>Примечание</label>
-                <textarea rows={7} placeholder='Комментарий к заказу' {...register('comment')} />
+                <textarea
+                  rows={5}
+                  placeholder='Комментарий к заказу'
+                  {...(register('comment'), { maxLength: 200 })}
+                />
                 <input type='submit' value='Заказать' />
               </form>
             </div>
